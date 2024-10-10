@@ -9,7 +9,7 @@
 
 # Gerenciamento de Pacientes e Planos de Saúde
 
-Este projeto é uma aplicação ASP.NET MVC com Entity Framework, desenvolvida para gerenciar o cadastro de pacientes, planos de saúde e a associação entre ambos.
+Este projeto é uma aplicação ASP.NET MVC com Entity Framework, desenvolvida para gerenciar o cadastro de pacientes, planos de saúde e a associação entre ambos que consuma a API de Cadastro de Pacientes e Planos de Saúde criada anteriormente. A aplicação deve permitir que os usuários interajam com a API de forma intuitiva, realizando operações de cadastro, atualização, exclusão e listagem de pacientes e planos de saúde.
 
 ## Funcionalidades Principais
 
@@ -27,6 +27,17 @@ Este projeto é uma aplicação ASP.NET MVC com Entity Framework, desenvolvida p
 - **Associar Pacientes a Planos:** Funcionalidade que permite associar um ou mais planos de saúde a um paciente.
 - **Remover Associações:** Permite remover a associação entre um paciente e um plano de saúde.
 - **Listagem de Associações:** Exibe a lista de planos de saúde associados a um paciente e de pacientes associados a um plano de saúde.
+
+---
+
+Requisitos Técnicos:
+ ● Utilize o padrão MVC para organizar o código da aplicação.
+ ● Consuma a API através de requisições HTTP (GET, POST, PUT, DELETE)
+ utilizando a biblioteca HttpClient.
+ ● Utilize o padrão JSON para o envio e recebimento de dados.
+ ● A interface deve ser responsiva e intuitiva, proporcionando uma boa
+ experiência ao usuário. UTILIZE BOOTSTRAP E/OU BOOTSWATCH
+ITEM OBRIGATÓRIO
 
 ---
 
