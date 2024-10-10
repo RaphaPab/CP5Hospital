@@ -49,7 +49,7 @@ Este projeto é uma aplicação ASP.NET MVC com Entity Framework, desenvolvida p
   ```bash
   dotnet run
 
----
+
 
 
    
