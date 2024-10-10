@@ -57,8 +57,16 @@ ITEM OBRIGATÓRIO
    dotnet ef database update
 
 3. Execute a aplicação:
-  ```bash
-  dotnet run
+   ```bash
+   dotnet run
+
+---
+### Link do vídeo no YouTube
+
+- https://youtu.be/BWXUsNa1i-E
+
+
+
 
 
 
