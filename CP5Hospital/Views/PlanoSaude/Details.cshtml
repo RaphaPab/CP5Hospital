@@ -1,0 +1,14 @@
+﻿@model CP5Hospital.Models.PlanoSaude
+
+@{
+    ViewBag.Title = "Detalhes do Plano de Saúde";
+}
+
+<h2>Detalhes do Plano de Saúde</h2>
+
+<div>
+    <p><strong>Nome do Plano:</strong> @Model.NomePlano</p>
+    <p><strong>Cobertura:</strong> @Model.Cobertura</p>
+</div>
+
+<a href="/PlanoSaude" class="btn btn-secondary">Voltar</a>

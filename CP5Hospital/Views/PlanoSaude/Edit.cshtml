@@ -1,0 +1,23 @@
+﻿@model CP5Hospital.Models.PlanoSaude
+
+@{
+    ViewBag.Title = "Editar Plano de Saúde";
+}
+
+<h2>Editar Plano de Saúde</h2>
+
+<form asp-action="Edit" method="post" class="mt-4">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label>Nome do Plano</label>
+        <input asp-for="NomePlano" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Cobertura</label>
+        <input asp-for="Cobertura" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Atualizar</button>
+    <a href="/PlanoSaude" class="btn btn-secondary">Cancelar</a>
+</form>

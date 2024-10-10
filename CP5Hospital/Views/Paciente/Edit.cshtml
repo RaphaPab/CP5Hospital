@@ -1,0 +1,35 @@
+﻿@model CP5Hospital.Models.Paciente
+
+@{
+    ViewBag.Title = "Editar Paciente";
+}
+
+<h2>Editar Paciente</h2>
+
+<form asp-action="Edit" method="post" class="mt-4">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label>Nome Completo</label>
+        <input asp-for="NomeCompleto" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Data de Nascimento</label>
+        <input asp-for="DataNascimento" class="form-control" type="date" />
+    </div>
+    <div class="form-group">
+        <label>CPF</label>
+        <input asp-for="CPF" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Endereço</label>
+        <input asp-for="Endereco" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Telefone</label>
+        <input asp-for="Telefone" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Atualizar</button>
+    <a href="/Paciente" class="btn btn-secondary">Cancelar</a>
+</form>

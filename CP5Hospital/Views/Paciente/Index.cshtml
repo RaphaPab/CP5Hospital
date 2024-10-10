@@ -1,0 +1,35 @@
+﻿@model IEnumerable<CP5Hospital.Models.Paciente>
+
+
+<h2>Pacientes</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>DataNascimento</th>
+            <th>CPF</th>
+            <th>Endereco</th>
+            <th>Telefone</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var paciente in Model)
+        {
+            <tr>
+                <td>@paciente.NomeCompleto</td>
+                <td>@paciente.DataNascimento.ToShortDateString()</td>
+                <td>@paciente.CPF</td>
+                <td>@paciente.Endereco</td>
+                <td>@paciente.Telefone</td>
+                <td>
+                    <a href="/Paciente/Details/@paciente.Id" class="btn btn-info">Detalhes</a>
+                    <a href="/Paciente/Edit/@paciente.Id" class="btn btn-warning">Editar</a>
+                    <a href="/Paciente/Delete/@paciente.Id" class="btn btn-danger">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="/Paciente/Create" class="btn btn-primary">Novo Paciente</a>

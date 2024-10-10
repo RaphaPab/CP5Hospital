@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<h1>Bem-vindo </h1>
+
+<div class="container">
+    <h2>Menu</h2>
+    <div class="list-group">
+        <a class="list-group-item list-group-item-action" asp-controller="Paciente" asp-action="Index">Gerenciar Pacientes</a>
+        <a class="list-group-item list-group-item-action" asp-controller="PlanoSaude" asp-action="Index">Gerenciar Planos de Saúde</a>
+        <a class="list-group-item list-group-item-action" asp-controller="PacientePlanoSaude" asp-action="ListarPacientes">Associar Pacientes a Planos de Saúde</a>
+        <a class="list-group-item list-group-item-action" asp-controller="PacientePlanoSaude" asp-action="ListarPlanos">Listar Planos de Saúde</a>
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; @DateTime.Now.Year - Gestão Hospitalar</p>
+</div>

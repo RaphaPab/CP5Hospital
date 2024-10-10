@@ -1,0 +1,29 @@
+﻿@model IEnumerable<CP5Hospital.Models.PlanoSaude>
+
+@{
+    ViewBag.Title = "Planos de Saúde Associados ao Paciente";
+}
+
+<h2>Planos de Saúde Associados ao Paciente</h2>
+
+<table class="table table-striped mt-4">
+    <thead>
+        <tr>
+            <th>Nome do Plano</th>
+            <th>Cobertura</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var plano in Model)
+        {
+            <tr>
+                <td>@plano.NomePlano</td>
+                <td>@plano.Cobertura</td>
+                <td>
+                    <a class="btn btn-info" href="/PlanoSaude/Details/@plano.Id">Detalhes</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

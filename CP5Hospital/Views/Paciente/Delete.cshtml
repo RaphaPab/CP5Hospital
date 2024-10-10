@@ -1,0 +1,15 @@
+﻿@model CP5Hospital.Models.Paciente
+
+@{
+    ViewBag.Title = "Excluir Paciente";
+}
+
+<h2>Excluir Paciente</h2>
+
+<p>Tem certeza que deseja excluir o paciente <strong>@Model.NomeCompleto</strong>?</p>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Excluir</button>
+    <a href="/Paciente" class="btn btn-secondary">Cancelar</a>
+</form>
