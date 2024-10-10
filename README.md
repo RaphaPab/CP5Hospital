@@ -31,13 +31,10 @@ Este projeto é uma aplicação ASP.NET MVC com Entity Framework, desenvolvida p
 ---
 
 Requisitos Técnicos:
- ● Utilize o padrão MVC para organizar o código da aplicação.
- ● Consuma a API através de requisições HTTP (GET, POST, PUT, DELETE)
- utilizando a biblioteca HttpClient.
- ● Utilize o padrão JSON para o envio e recebimento de dados.
- ● A interface deve ser responsiva e intuitiva, proporcionando uma boa
- experiência ao usuário. UTILIZE BOOTSTRAP E/OU BOOTSWATCH
-ITEM OBRIGATÓRIO
+ - Utilize o padrão MVC para organizar o código da aplicação.
+ - Consuma a API através de requisições HTTP (GET, POST, PUT, DELETE)utilizando a biblioteca HttpClient.
+ - Utilize o padrão JSON para o envio e recebimento de dados.
+ - A interface deve ser responsiva e intuitiva, proporcionando uma boa experiência ao usuário. UTILIZE BOOTSTRAP E/OU BOOTSWATCH ITEM OBRIGATÓRIO
 
 ---
 
